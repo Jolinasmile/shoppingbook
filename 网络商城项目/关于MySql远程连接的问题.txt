@@ -1,0 +1,15 @@
+1、启动MySql：net start mysql
+2、输入D:进入D盘，在输入cd D:\MySql\mysql-5.6.16-winx64\bin进入到mysql的bin目录下才可以输入 mysql -hlocalhost -uroot -p123456(其中-h表示服务器名，localhost表示本地；-u为数据库用户名，root是mysql默认用户名；-p为密码，如果设置了密码，可直接在-p后链接输入，如：-p123456)
+3、update user set host = ’%’ where user = ’root’;（将host字段的值改为%就表示在任何客户端机器上能以root用户登录到mysql服务器）
+4、GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY '123456'WITH GRANT OPTION; %表示多有机器。
+5、FLUSH PRIVILEGES //修改生效
+6、exit
+
+
+使用Navicat for mysql 远程连接 mySql数据库会提示10061、1045错误或 2003-Can’t connect to MySQL on ’192.168.1.2’(10061),这个原因是因为MySQL不准许远程连接。
+
+参考：
+http://www.111cn.net/database/mysql/46377.htm
+http://blog.csdn.net/waitforfree/article/details/12389553
+http://blog.csdn.net/zxyvb/article/details/2462514
+

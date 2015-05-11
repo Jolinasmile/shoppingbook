@@ -1,0 +1,18 @@
+CREATE TABLE `NewTable` (
+`orderId`  int(11) NOT NULL COMMENT '订单ID' ,
+`orderDate`  datetime NULL DEFAULT NULL COMMENT '提交时间' ,
+`bookId`  int(11) NOT NULL COMMENT '书籍Id' ,
+`bookName`  varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '书名' ,
+`nowprice`  float(10,0) NULL DEFAULT NULL COMMENT '现价' ,
+`publisher`  varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '出版社' ,
+`author`  varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '作者' ,
+`orderNum`  int(10) NULL DEFAULT NULL COMMENT '订的数量' ,
+`name`  varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '名称' ,
+`address`  varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '地址' ,
+`phone`  varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '电话' ,
+`flag`  int(5) NULL DEFAULT NULL COMMENT '状态' 
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+ROW_FORMAT=COMPACT
+;

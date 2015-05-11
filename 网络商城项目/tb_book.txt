@@ -1,0 +1,26 @@
+CREATE TABLE `NewTable` (
+`bookId`  int(11) NOT NULL AUTO_INCREMENT COMMENT '书籍Id' ,
+`superTypeId`  int(11) NULL DEFAULT NULL COMMENT '大类Id' ,
+`subTypeId`  int(11) NULL DEFAULT NULL COMMENT '小类Id' ,
+`bookName`  varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '书名' ,
+`ISBN`  varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'ISBN号' ,
+`introduce`  text CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '介绍' ,
+`price`  float(10,0) NULL DEFAULT NULL COMMENT '原价' ,
+`nowprice`  float(10,0) NULL DEFAULT NULL COMMENT '现价' ,
+`picture`  varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '封面' ,
+`pages`  int(10) NULL DEFAULT NULL COMMENT '页数' ,
+`publisher`  varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '出版社' ,
+`author`  varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '作者' ,
+`inTime`  datetime NULL DEFAULT NULL COMMENT '添加时间' ,
+`newBooks`  int(5) NULL DEFAULT NULL COMMENT '是否新书' ,
+`saleBooks`  int(5) NULL DEFAULT NULL COMMENT '是否特价' ,
+`hostBooks`  int(5) NULL DEFAULT NULL COMMENT '是否热销' ,
+`specialBooks`  int(5) NULL DEFAULT NULL COMMENT '是否特别推荐' ,
+`bookNum`  int(10) NULL DEFAULT NULL COMMENT '数量' ,
+PRIMARY KEY (`bookId`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+;

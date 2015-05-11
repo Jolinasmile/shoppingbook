@@ -1,0 +1,16 @@
+CREATE TABLE `NewTable` (
+`orderId`  int(11) NOT NULL AUTO_INCREMENT COMMENT '订单ID' ,
+`name`  varchar(0) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '用户名' ,
+`realname`  varchar(0) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '真实名称' ,
+`address`  varchar(0) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '地址' ,
+`postcode`  varchar(0) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '编邮' ,
+`email`  text CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'E-mail' ,
+`orderDate`  datetime NULL DEFAULT NULL COMMENT '提交时间' ,
+`flag`  int(11) NULL DEFAULT NULL COMMENT '状态' ,
+PRIMARY KEY (`orderId`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+AUTO_INCREMENT=1
+ROW_FORMAT=COMPACT
+;
